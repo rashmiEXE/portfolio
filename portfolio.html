@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rashmi Ranjan Pradhan — Portfolio</title>
+    <!-- Google Fonts for Editorial Newspaper & Modern Sans Pairing -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Newsreader', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        paper: '#FAFAFA',
+                        ink: '#111111',
+                        borderDark: '#222222',
+                        muted: '#666666'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-paper text-ink selection:bg-ink selection:text-paper min-h-screen">
+
+    <header class="sticky top-0 z-40 bg-paper/90 backdrop-blur-md border-b-2 border-ink">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-serif font-bold text-xl italic tracking-tight hover:opacity-70 transition-opacity">
+                R. R. Pradhan
+            </a>
+
+            <nav
+                class="hidden md:flex items-center space-x-6 text-xs font-display font-semibold uppercase tracking-wider text-neutral-700">
+                <a href="#about" class="hover:text-ink hover:underline underline-offset-4 transition-all">About</a>
+                <a href="#education"
+                    class="hover:text-ink hover:underline underline-offset-4 transition-all">Education</a>
+                <a href="#projects"
+                    class="hover:text-ink hover:underline underline-offset-4 transition-all">Projects</a>
+                <a href="#skills" class="hover:text-ink hover:underline underline-offset-4 transition-all">Skills</a>
+                <a href="#experience"
+                    class="hover:text-ink hover:underline underline-offset-4 transition-all">Experience</a>
+                <a href="#contact" class="hover:text-ink hover:underline underline-offset-4 transition-all">Contact</a>
+            </nav>
+
+            <a href="#contact"
+                class="text-xs font-display font-bold uppercase tracking-widest bg-ink text-paper px-4 py-2 hover:bg-neutral-800 transition-all border border-ink shadow-[2px_2px_0px_#111]">
+                Get In Touch
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10 md:py-16 space-y-16">
+
+        <section id="about" class="reveal space-y-8">
+            <!-- Masthead Header Style -->
+            <div
+                class="border-y-2 border-ink py-2 flex flex-wrap items-center justify-between text-xs font-display font-bold uppercase tracking-widest text-neutral-600 gap-2">
+                <span>VOL. I — NO. 01</span>
+                <span>BHUBANESWAR, ODISHA, INDIA</span>
+                <span>ECE & FULL-STACK DEV</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pt-2">
+
+                <!-- Main Editorial Headline & Text -->
+                <div class="md:col-span-8 space-y-6">
+                    <div
+                        class="inline-block px-3 py-1 bg-ink text-paper text-xs font-display uppercase tracking-widest">
+                        B.Tech Student — ECE
+                    </div>
+
+                    <h1
+                        class="font-serif text-4xl sm:text-5xl md:text-6xl font-normal tracking-tight text-ink leading-[1.05]">
+                        RASHMI RANJAN <br>
+                        <span class="italic font-semibold">PRADHAN</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-neutral-800 font-serif leading-relaxed">
+                        B.Tech student in Electronics and Communication Engineering with a strong focus on <strong
+                            class="font-sans font-semibold text-ink">embedded systems</strong>, <strong
+                            class="font-sans font-semibold text-ink">digital electronics</strong>, and <strong
+                            class="font-sans font-semibold text-ink">modern web development</strong>. Eager to solve
+                        practical engineering challenges and build robust technical solutions.
+                    </p>
+
+                    <!-- Contact & Social Bar -->
+                    <div
+                        class="pt-4 flex flex-wrap items-center gap-4 text-xs font-display font-bold uppercase tracking-wider">
+                        <a href="mailto:rashmiranjanpradhan623@gmail.com"
+                            class="px-3 py-2 border border-ink hover:bg-ink hover:text-paper transition-all">
+                            Email Me
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener"
+                            class="px-3 py-2 border border-ink hover:bg-ink hover:text-paper transition-all">
+                            LinkedIn ↗
+                        </a>
+                        <a href="https://github.com/RashmiRanjan-git" target="_blank" rel="noopener"
+                            class="px-3 py-2 border border-ink hover:bg-ink hover:text-paper transition-all">
+                            GitHub ↗
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile Photo Placeholder Container -->
+                <div class="md:col-span-4 flex justify-center md:justify-end">
+                    <div
+                        class="relative w-56 h-64 sm:w-64 sm:h-72 border-2 border-ink bg-white p-2 shadow-[6px_6px_0px_#111] group overflow-hidden">
+                        <div
+                            class="w-full h-full border border-neutral-200 bg-neutral-100 flex flex-col items-center justify-center text-center p-4 relative overflow-hidden">
+                            <!-- Image Placeholder fallback or actual image preview -->
+                            <img src="rashmi.png"
+                                alt="Rashmi Ranjan Pradhan Profile Photo"
+                                class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500">
+
+                            <!-- Overlay Badge -->
+                            <div
+                                class="absolute bottom-2 left-2 right-2 bg-ink/90 text-paper text-[10px] font-display uppercase tracking-[0.18em] py-1 text-center backdrop-blur-sm">
+                                Rashmi
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Summary Card -->
+            <div class="reveal stagger-1 p-6 border-2 border-ink bg-white shadow-[4px_4px_0px_#111] space-y-2">
+                <h2 class="font-display text-xs uppercase font-bold tracking-widest text-neutral-500">Professional
+                    Summary</h2>
+                <p class="text-sm md:text-base leading-relaxed text-neutral-800">
+                    B.Tech student in Electronics and Communication Engineering with a strong interest in embedded
+                    systems, digital electronics and communication systems. I am also exploring web development and
+                    digital marketing to build versatile technical and problem-solving skills. Eager to apply my
+                    knowledge through projects and practical experiences while contributing to innovative solutions.
+                </p>
+            </div>
+        </section>
+
+        <section id="education" class="reveal space-y-6">
+            <div class="double-border-b pb-3 flex items-baseline justify-between">
+                <h2 class="font-serif text-3xl font-bold tracking-tight">Academic Background</h2>
+                <span class="font-display text-xs uppercase tracking-widest text-neutral-500 font-bold">2021 —
+                    2027</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Education Item 1 -->
+                <div class="editorial-card p-6 border-2 border-ink bg-white space-y-3 flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <span
+                            class="text-[10px] font-display uppercase tracking-widest px-2 py-0.5 border border-ink font-bold inline-block">2023
+                            – 2027</span>
+                        <h3 class="font-serif text-xl font-bold leading-snug">B.Tech in ECE</h3>
+                        <p class="text-xs font-semibold text-neutral-600">Silicon University, Bhubaneswar, Odisha</p>
+                    </div>
+                    <div class="pt-3 border-t border-neutral-200 text-xs font-display font-bold">
+                        CGPA: <span class="bg-ink text-paper px-2 py-0.5">7.46 (Till Date)</span>
+                    </div>
+                </div>
+
+                <!-- Education Item 2 -->
+                <div class="editorial-card p-6 border-2 border-ink bg-white space-y-3 flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <span
+                            class="text-[10px] font-display uppercase tracking-widest px-2 py-0.5 border border-ink font-bold inline-block">2021
+                            – 2023</span>
+                        <h3 class="font-serif text-xl font-bold leading-snug">Higher Secondary (Class XII)</h3>
+                        <p class="text-xs font-semibold text-neutral-600">Fakir Mohan College, Balasore, Odisha</p>
+                    </div>
+                    <div class="pt-3 border-t border-neutral-200 text-xs font-display font-bold">
+                        Percentage: <span class="bg-ink text-paper px-2 py-0.5">69.7%</span>
+                    </div>
+                </div>
+
+                <!-- Education Item 3 -->
+                <div class="editorial-card p-6 border-2 border-ink bg-white space-y-3 flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <span
+                            class="text-[10px] font-display uppercase tracking-widest px-2 py-0.5 border border-ink font-bold inline-block">Passed
+                            2021</span>
+                        <h3 class="font-serif text-xl font-bold leading-snug">Secondary Class X</h3>
+                        <p class="text-xs font-semibold text-neutral-600">Pragyan Bharati Shikshya Kendra, Odisha</p>
+                    </div>
+                    <div class="pt-3 border-t border-neutral-200 text-xs font-display font-bold">
+                        Percentage: <span class="bg-ink text-paper px-2 py-0.5">92.33%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="reveal space-y-6">
+            <div class="double-border-b pb-3 flex items-baseline justify-between">
+                <h2 class="font-serif text-3xl font-bold tracking-tight">Featured Projects</h2>
+                <span class="font-display text-xs uppercase tracking-widest text-neutral-500 font-bold">Hands-On
+                    Work</span>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Project 1 -->
+                <div class="editorial-card p-6 border-2 border-ink bg-white space-y-4">
+                    <div
+                        class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2 border-neutral-100 pb-3">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-ink">Line Follower Robot</h3>
+                            <p class="text-xs font-display font-bold uppercase text-neutral-500 mt-0.5">Hardware &
+                                Robotics</p>
+                        </div>
+                        <span
+                            class="text-xs font-display font-bold uppercase px-3 py-1 border border-ink bg-paper w-fit">Mar
+                            2024</span>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="text-[10px] font-display uppercase font-bold tracking-wider px-2 py-1 bg-ink text-paper">Arduino</span>
+                        <span
+                            class="text-[10px] font-display uppercase font-bold tracking-wider px-2 py-1 bg-ink text-paper">IR
+                            Sensors</span>
+                        <span
+                            class="text-[10px] font-display uppercase font-bold tracking-wider px-2 py-1 bg-ink text-paper">Embedded
+                            Systems</span>
+                    </div>
+
+                    <ul class="space-y-2 text-sm text-neutral-800 list-disc list-inside leading-relaxed">
+                        <li>Designed and developed a line follower robot using Arduino and IR sensors.</li>
+                        <li>Implemented sensor calibration and motor control for smooth navigation.</li>
+                        <li>Gained hands-on experience in embedded systems and hardware integration.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="editorial-card p-6 border-2 border-ink bg-white space-y-4">
+                    <div
+                        class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2 border-neutral-100 pb-3">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-ink">Traffic Light Control System (Simulation)
+                            </h3>
+                            <p class="text-xs font-display font-bold uppercase text-neutral-500 mt-0.5">Circuit Design &
+                                Logic Control</p>
+                        </div>
+                        <span
+                            class="text-xs font-display font-bold uppercase px-3 py-1 border border-ink bg-paper w-fit">Nov
+                            2023</span>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="text-[10px] font-display uppercase font-bold tracking-wider px-2 py-1 bg-ink text-paper">Proteus</span>
+                        <span
+                            class="text-[10px] font-display uppercase font-bold tracking-wider px-2 py-1 bg-ink text-paper">Embedded
+                            Systems</span>
+                    </div>
+
+                    <ul class="space-y-2 text-sm text-neutral-800 list-disc list-inside leading-relaxed">
+                        <li>Designed and simulated an automated traffic light control system.</li>
+                        <li>Used timers and logic circuits to manage signal switching.</li>
+                        <li>Improved understanding of digital electronics and real-time control.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="editorial-card p-6 border-2 border-ink bg-white space-y-4">
+                    <div
+                        class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2 border-neutral-100 pb-3">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-ink">Portfolio Website</h3>
+                            <p class="text-xs font-display font-bold uppercase text-neutral-500 mt-0.5">Frontend
+                                Development</p>
+                        </div>
+                        <span
+                            class="text-xs font-display font-bold uppercase px-3 py-1 border border-ink bg-paper w-fit">Aug
+                            2024</span>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="text-[10px] font-display uppercase font-bold tracking-wider px-2 py-1 bg-ink text-paper">HTML</span>
+                        <span
+                            class="text-[10px] font-display uppercase font-bold tracking-wider px-2 py-1 bg-ink text-paper">CSS</span>
+                        <span
+                            class="text-[10px] font-display uppercase font-bold tracking-wider px-2 py-1 bg-ink text-paper">JavaScript</span>
+                    </div>
+
+                    <ul class="space-y-2 text-sm text-neutral-800 list-disc list-inside leading-relaxed">
+                        <li>Built a personal portfolio website to showcase my skills, projects and achievements.</li>
+                        <li>Implemented a clean and responsive design.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="reveal space-y-6">
+            <div class="double-border-b pb-3 flex items-baseline justify-between">
+                <h2 class="font-serif text-3xl font-bold tracking-tight">Technical Skills</h2>
+                <span
+                    class="font-display text-xs uppercase tracking-widest text-neutral-500 font-bold">Capabilities</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Programming Languages -->
+                <div class="p-6 border-2 border-ink bg-white space-y-3">
+                    <h3
+                        class="font-display text-xs uppercase font-bold tracking-widest text-neutral-500 border-b border-neutral-200 pb-2">
+                        Programming Languages</h3>
+                    <div class="flex flex-wrap gap-2 pt-1">
+                        <span class="px-3 py-1 bg-paper border border-ink text-xs font-display font-bold">Java</span>
+                        <span class="px-3 py-1 bg-paper border border-ink text-xs font-display font-bold">C
+                            (Basics)</span>
+                    </div>
+                </div>
+
+                <!-- Web Technologies -->
+                <div class="p-6 border-2 border-ink bg-white space-y-3">
+                    <h3
+                        class="font-display text-xs uppercase font-bold tracking-widest text-neutral-500 border-b border-neutral-200 pb-2">
+                        Web Technologies</h3>
+                    <div class="flex flex-wrap gap-2 pt-1">
+                        <span class="px-3 py-1 bg-paper border border-ink text-xs font-display font-bold">HTML</span>
+                        <span class="px-3 py-1 bg-paper border border-ink text-xs font-display font-bold">CSS</span>
+                        <span
+                            class="px-3 py-1 bg-paper border border-ink text-xs font-display font-bold">JavaScript</span>
+                        <span class="px-3 py-1 bg-paper border border-ink text-xs font-display font-bold">React.js
+                            (Basics)</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="p-6 border-2 border-ink bg-white space-y-3">
+                    <h3
+                        class="font-display text-xs uppercase font-bold tracking-widest text-neutral-500 border-b border-neutral-200 pb-2">
+                        Tools & Platforms</h3>
+                    <div class="flex flex-wrap gap-2 pt-1">
+                        <span class="px-3 py-1 bg-paper border border-ink text-xs font-display font-bold">Git</span>
+                        <span class="px-3 py-1 bg-paper border border-ink text-xs font-display font-bold">GitHub</span>
+                        <span class="px-3 py-1 bg-paper border border-ink text-xs font-display font-bold">VS Code</span>
+                        <span class="px-3 py-1 bg-paper border border-ink text-xs font-display font-bold">Google
+                            Analytics</span>
+                        <span class="px-3 py-1 bg-paper border border-ink text-xs font-display font-bold">Google Search
+                            Console</span>
+                    </div>
+                </div>
+
+                <!-- Core ECE Areas -->
+                <div class="p-6 border-2 border-ink bg-white space-y-3">
+                    <h3
+                        class="font-display text-xs uppercase font-bold tracking-widest text-neutral-500 border-b border-neutral-200 pb-2">
+                        Core ECE Areas</h3>
+                    <div class="flex flex-wrap gap-2 pt-1">
+                        <span class="px-3 py-1 bg-paper border border-ink text-xs font-display font-bold">Digital
+                            Electronics</span>
+                        <span class="px-3 py-1 bg-paper border border-ink text-xs font-display font-bold">Analog
+                            Electronics</span>
+                        <span class="px-3 py-1 bg-paper border border-ink text-xs font-display font-bold">Communication
+                            Systems</span>
+                        <span
+                            class="px-3 py-1 bg-paper border border-ink text-xs font-display font-bold">Microprocessors
+                            & Microcontrollers</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Academic Courses List -->
+            <div class="p-6 border-2 border-ink bg-white space-y-4">
+                <h3
+                    class="font-display text-xs uppercase font-bold tracking-widest text-neutral-500 border-b border-neutral-200 pb-2">
+                    Academic Courses (ECE)</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-3 text-sm font-semibold text-neutral-800">
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-ink"></span> Digital Electronics
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-ink"></span> Analog Electronics
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-ink"></span> Communication Systems
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-ink"></span> Microprocessors & Microcontrollers
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-ink"></span> Signals and Systems
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-ink"></span> Basic Networking Concepts
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="reveal space-y-6">
+            <div class="double-border-b pb-3 flex items-baseline justify-between">
+                <h2 class="font-serif text-3xl font-bold tracking-tight">Experience & Training</h2>
+                <span class="font-display text-xs uppercase tracking-widest text-neutral-500 font-bold">Freelance &
+                    Learning</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <!-- Freelance Experience -->
+                <div class="md:col-span-7 p-6 border-2 border-ink bg-white space-y-4">
+                    <div class="flex justify-between items-start border-b border-neutral-200 pb-3">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-ink">Digital Marketing and SEO</h3>
+                            <p class="text-xs font-display font-bold uppercase text-neutral-500 mt-1">Self-learning /
+                                Freelance</p>
+                        </div>
+                        <span
+                            class="text-xs font-display font-bold uppercase border border-ink px-2.5 py-1 bg-paper">2024</span>
+                    </div>
+
+                    <ul class="space-y-2 text-sm text-neutral-800 list-disc list-inside leading-relaxed">
+                        <li>Gained hands-on experience in keyword research, on-page and off-page SEO, and content
+                            optimization.</li>
+                        <li>Used Google Analytics, Google Search Console and SEMrush for performance tracking.</li>
+                        <li>Created and optimized content to improve website visibility.</li>
+                    </ul>
+                </div>
+
+                <!-- Certifications List -->
+                <div class="md:col-span-5 p-6 border-2 border-ink bg-paper space-y-4">
+                    <h3
+                        class="font-display text-xs uppercase font-bold tracking-widest text-neutral-500 border-b border-ink pb-2">
+                        Certifications</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex justify-between items-center border-b border-neutral-200 pb-2">
+                            <span class="font-bold">Digital Marketing & SEO</span>
+                            <span
+                                class="text-xs font-display uppercase border border-ink px-1.5 py-0.5 bg-white">2024</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-neutral-200 pb-2">
+                            <span class="font-bold">MERN Stack Development</span>
+                            <span
+                                class="text-xs font-display uppercase border border-ink px-1.5 py-0.5 bg-ink text-paper">In
+                                Progress</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="font-bold">Arduino for Beginners</span>
+                            <span
+                                class="text-xs font-display uppercase border border-ink px-1.5 py-0.5 bg-white">2023</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Achievements -->
+            <div class="p-6 border-2 border-ink bg-white space-y-4">
+                <h2 class="font-serif text-2xl font-bold">Achievements & Interests</h2>
+                <ul class="space-y-2 text-sm text-neutral-800 list-disc list-inside leading-relaxed">
+                    <li>Strong academic record in Class X (<strong class="font-bold">92.33%</strong>)</li>
+                    <li>Actively learning MERN stack development</li>
+                    <li>Interested in Embedded Systems, IoT, Web Development and Emerging Technologies</li>
+                </ul>
+            </div>
+
+            <!-- Languages -->
+            <div class="p-6 border-2 border-ink bg-white space-y-4">
+                <h2 class="font-serif text-2xl font-bold">Languages</h2>
+                <div class="space-y-2 text-sm font-semibold">
+                    <div class="flex justify-between border-b border-neutral-200 pb-2">
+                        <span>English</span>
+                        <span class="font-display text-xs uppercase text-neutral-500">Fluent</span>
+                    </div>
+                    <div class="flex justify-between border-b border-neutral-200 pb-2">
+                        <span>Hindi</span>
+                        <span class="font-display text-xs uppercase text-neutral-500">Fluent</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Odia</span>
+                        <span class="font-display text-xs uppercase text-neutral-500">Native</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="reveal space-y-8 pt-8 double-border-t">
+            <div class="text-center max-w-xl mx-auto space-y-3">
+                <h2 class="font-serif text-4xl font-bold tracking-tight">Initiate Contact</h2>
+                <p class="text-sm text-neutral-600 font-sans">
+                    Reach out directly for collaborations, embedded projects, or technical opportunities.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+                <button onclick="copyToClipboard('rashmiranjanpradhan623@gmail.com', 'EMAIL COPIED TO CLIPBOARD')"
+                    class="p-4 border-2 border-ink bg-white hover:bg-ink hover:text-paper transition-all text-left group shadow-[4px_4px_0px_#111]">
+                    <span
+                        class="text-[10px] font-display uppercase tracking-widest text-neutral-500 group-hover:text-neutral-300 block">Email
+                        Address</span>
+                    <span
+                        class="text-xs sm:text-sm font-bold truncate block font-mono mt-1">rashmiranjanpradhan623@gmail.com</span>
+                </button>
+
+                <button onclick="copyToClipboard('7846968601', 'PHONE NUMBER COPIED TO CLIPBOARD')"
+                    class="p-4 border-2 border-ink bg-white hover:bg-ink hover:text-paper transition-all text-left group shadow-[4px_4px_0px_#111]">
+                    <span
+                        class="text-[10px] font-display uppercase tracking-widest text-neutral-500 group-hover:text-neutral-300 block">Phone
+                        Number</span>
+                    <span class="text-sm font-bold font-mono block mt-1">+91 7846968601</span>
+                </button>
+            </div>
+
+            <form onsubmit="handleContact(event)" class="max-w-xl mx-auto space-y-4 pt-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-display uppercase font-bold text-neutral-600 mb-1">Name</label>
+                        <input type="text" required placeholder="John Doe"
+                            class="w-full px-4 py-2.5 border-2 border-ink bg-white text-sm focus:outline-none focus:bg-neutral-50">
+                    </div>
+                    <div>
+                        <label
+                            class="block text-xs font-display uppercase font-bold text-neutral-600 mb-1">Email</label>
+                        <input type="email" required placeholder="john@example.com"
+                            class="w-full px-4 py-2.5 border-2 border-ink bg-white text-sm focus:outline-none focus:bg-neutral-50">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-display uppercase font-bold text-neutral-600 mb-1">Message</label>
+                    <textarea rows="4" required placeholder="Your message here..."
+                        class="w-full px-4 py-2.5 border-2 border-ink bg-white text-sm focus:outline-none focus:bg-neutral-50 resize-none"></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full py-3 bg-ink text-paper font-display uppercase font-bold text-xs tracking-widest border-2 border-ink shadow-[4px_4px_0px_#222] hover:bg-neutral-800 transition-all">
+                    Send Correspondence
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="double-border-t py-8 mt-16 text-center text-xs font-display uppercase font-bold text-neutral-500">
+        <p>© 2026 Rashmi Ranjan Pradhan — All Information Verified via Resume</p>
+    </footer>
+
+    <!-- Toast popup element -->
+    <div id="toast">Copied to Clipboard</div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
