@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import profileImage from '../rashmi.png';
 
 const education = [
@@ -59,6 +59,22 @@ const certifications = [
 
 export default function App() {
   const [toast, setToast] = useState('');
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    const revealElements = document.querySelectorAll('.reveal');
+    revealElements.forEach((element) => observer.observe(element));
+
+    return () => observer.disconnect();
+  }, []);
 
   const showToast = (message) => {
     setToast(message);
